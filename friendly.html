@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Make Friends with Friendly!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://kit.fontawesome.com/72fae2fd4c.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="mainContainer">
+
+      <div class="header">
+        <img class="rellax" data-rellax-speed="-2" src="images/header.png" alt="Header">
+      </div>
+
+      <div class="rellax" data-rellax-speed="2"id="title">
+          Hi Friendly!
+      </div>
+
+      <div id="intro" class="rellax" data-rellax-speed="2"id="title">
+        <p>Friendly is your best choice to make REAL friends in the virtual world.</p>
+      </div>
+
+        <div id="bell" class="rellax" data-rellax-speed="-0.5">
+          <i class="far fa-bell"></i>
+        </div>
+
+        <div id="comment" class="rellax" data-rellax-speed="-0.5">
+          <i class="fas fa-comment"></i>
+        </div>
+
+        <div id="wink" class="rellax" data-rellax-speed="-0.5">
+          <i class="fas fa-kiss-wink-heart"></i>
+        </div>
+
+        <div id="sun" class="rellax" data-rellax-speed="-0.5">
+          <i class="far fa-sun"></i>
+        </div>
+
+        <div id="cookie" class="rellax" data-rellax-speed="-0.5">
+          <i class="fas fa-cookie-bite"></i>
+        </div>
+
+
+        <p id="line1" class="rellax" data-rellax-speed="1.8"
+        >Can we be friends?</p>
+        <p id="line2" class="rellax" data-rellax-speed="1.8"
+        >CU ^.^ </p>
+
+        <div class="cards">
+          <div class="card">
+            <img src="images/side1.png" alt="side1" >
+            <p>Build your connection</p>
+          </div>
+          <div class="card">
+            <img src="images/side3.png" alt="side3" >
+            <p>Unlock more features</p>
+          </div>
+          <div class="card">
+            <img src="images/side2.png" alt="side2" >
+            <p>More connections, more fun!</p>
+          </div>
+
+        </div>
+
+        <div id="title2" class="rellax" data-rellax-speed="0.5">
+          Your virtual connection starts here...
+        </div>
+
+      <div class="button">
+
+        <button id="joinButton">Join Now</button>
+      </div>
+
+      <div id="popWindow" class="modal">
+        <div class="windowContent">
+
+          <div class="windowHead">
+            <span class="close">&times;</span>
+            Let us know who you are!
+          </div>
+
+          <div class="windowMiddle">
+
+            <div class="userAvatar">
+                <i class="fas fa-user-circle"></i>
+            </div>
+
+            <div class="input">
+
+
+            <div class="name">
+              <p>Tell us who you are!</p>
+
+              <div >
+                <input class="box" type="text" value="George ">
+              </div>
+            </div>
+
+          <div class="age">
+            <p>Years since you were born</p>
+            <div >
+              <input class="box" type="text" value="20">
+            </div>
+          </div>
+
+          <div class="dropDown">
+            <form class="choose" action="page1.html" >
+              <label for="cars">Type of people you're looking for:</label>
+                <select name="user" id="userType">
+                  <option value="artsy">Artsy</option>
+                  <option value="stan">Stan</option>
+                  <option value="bored">Bored</option>
+                  <option value="funny">Funny</option>
+                </select>
+                <br><br>
+                <div>
+                  <input class="btn2" type="submit" value="Let's connect!">
+                </div>
+
+            </form>
+          </div>
+
+
+          </div>
+</div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+    <script src="script.js" charset="utf-8"></script>
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+    <script>
+  var rellax = new Rellax('.rellax');
+  </script>
+  </body>
+</html>

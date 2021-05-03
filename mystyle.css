@@ -1,0 +1,241 @@
+html{
+  height:100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  font-family: 'Varela Round', sans-serif;
+  height:100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  background-color: #CADBEB;
+  display: flex;
+  justify-content:center;
+}
+p{
+  margin:0px;
+  padding:0px;
+}
+.mainInterface{
+  width: 85%;
+  margin: 8vmin;
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.head{
+  padding: 2.5vmin 2.5vmin 2vmin 2.5vmin;
+  font-size: 3vmin;
+  border-bottom: 1px solid rgba(147, 182, 245, 0.3);
+  box-shadow:0px 3px 5px 0px rgba(50, 50, 50, 0.1);
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  align-items: center;
+}
+.head i{
+  color:#3972F6;
+  font-size: 4.5vmin;
+  margin-right: 1.5vmin;
+}
+
+.btn_1{
+  margin-left: auto;
+  padding: 1.5vmin;
+}
+.btn_2{
+  margin-left: 3vmin;
+  padding: 1.5vmin;
+
+}
+
+.btn_1 {
+  border: none;
+  background-color: #3972F6;
+  color: white;
+  border-radius: 5px;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 2vmin;
+}
+
+.btn_2{
+  border: none;
+  background-color: #CC68B2;
+  color: white;
+  border-radius: 5px;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 2vmin;
+}
+
+.btn_1, .btn_2:hover{
+  cursor: pointer;
+}
+.innerContent{
+  flex-grow: 5;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+.sideBar{
+    width: 20vmin;
+    padding: 2.5vmin;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+}
+.sideItem{
+  align-items: center;
+  padding: 3.5vmin 0vmin 3vmin 0vmin;
+  border-bottom: 1px solid #CCCCCC;
+}
+
+.sideItem i{
+  margin-right: 2vmin;
+  font-size: 3vmin;
+}
+.adSection{
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 2vmin;
+}
+
+.adSection img{
+  margin-top: 2vmin;
+  width:20vmin;
+  border-radius: 15px;
+}
+.adSection p{
+  font-size: 1vmin;
+  margin-left: 1vmin;
+  margin-top: 1vmin;
+}
+
+
+#feed{
+  padding: 1.5vmin 0vmin 1.5vmin 1.5vmin;
+  background-color: #EEF0F0;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 4;
+}
+
+#feed div:nth-of-type(1) {flex-grow: 1;}
+#feed div:nth-of-type(2) {flex-grow: 1;}
+#feed div:nth-of-type(3) {flex-grow: 1;}
+#feed div:nth-of-type(4) {flex-grow: 1;}
+
+
+.newFeed{
+  display:flex;
+  flex-direction:row;
+  align-items: center;
+}
+.userProfile{
+  border-radius: 50%;
+  width: 9%;
+  padding: 1vmin;
+  margin-right: 2vmin;
+}
+
+.userInfo{
+  display: flex;
+  flex-direction: column;
+}
+
+.userName{
+  color: #3972F6;
+  font-size: 3vmin;
+  padding-bottom: 0.5vmin;
+}
+
+.userAge{
+  color: #AEAEB0;
+  padding-bottom: 0.5vmin;
+}
+
+.userStatus{
+  font-size: 1.8vmin;
+}
+
+.userHobby{
+  font-size: 1.8vmin;
+  margin-top: 2vmin;
+  color: #F59A89;
+}
+
+.userNameLinked{
+  color: #3972F6;
+  font-size: 3vmin;
+  padding-bottom: 0.5vmin;
+}
+
+.userNameLinked:hover{
+  /* text-decoration: underline; */
+  color: #7F9FF5;
+  cursor: pointer;
+}
+
+.userNameLinked .popupMes{
+visibility: hidden;
+width: 20vmin;
+background-color: rgba(146,180,209,0.7);
+color: #6D8AA1;
+text-align: center;
+font-size: 1.5vmin;
+padding: 1vmin;
+border-radius: 1vmin;
+margin-left:2vmin;
+position: absolute;
+z-index: 1;
+}
+
+.userNameLinked:hover .popupMes{
+  visibility: visible;
+
+}
+#detail{
+  padding: 1.5vmin 0vmin 1.5vmin 1.5vmin;
+  background-color: #EEF0F0;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 4;
+  align-items: center;
+}
+.newUserDetail{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+}
+
+.newUserProfile{
+  margin-top: 5vmin;
+  border-radius: 50%;
+  width: 25%;
+  padding: 1vmin;
+  margin-right: 2vmin;
+}
+
+.moreButton{
+  margin-top: 2vmin;
+  border: none;
+  background-color: #3972F6;
+  color: white;
+  border-radius: 5px;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 2vmin;
+  width: 20vmin;
+  align-self: center;
+}
+.moreButton:hover{
+  cursor: pointer;
+
+}

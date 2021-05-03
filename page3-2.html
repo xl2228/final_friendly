@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Friend Detail</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://kit.fontawesome.com/72fae2fd4c.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="mainInterface">
+      <div class="head">
+        <i class="fas fa-paper-plane"></i>
+        <p>Friendly</p>
+
+      </div>
+
+      <div class="innerContent">
+
+        <div class="sideBar" >
+          <div class="sideItem">
+            <i class="fas fa-rss-square"></i>
+            Feed
+          </div>
+          <div class="sideItem"style="color:#3972F6;">
+            <i class="fas fa-user-friends"></i>
+            Freinds
+          </div>
+          <div class="sideItem">
+            <i class="fas fa-search"></i>
+            Discover
+          </div>
+          <div class="sideItem">
+            <i class="fas fa-id-card"></i>
+            My Page
+          </div>
+
+          <div class="adSection">
+          <p>Ads</p>
+            <img src="images/airpods_add.jpeg" alt="Airpods2">
+            <p>Redefines Listening <br> Shop the new Airpods 2 now at <span style="text-decoration: underline; color: #3972F6">αpple.com</span></p>
+          </div>
+
+        </div>
+
+        <div id="detail">
+
+
+          </div>
+
+
+        </div>
+</div>
+
+<script>
+
+  let outputDetail = document.getElementById("detail");
+
+  let userDetailData = [
+    {
+      "profile_image": "images/up2.jpeg",
+      "user_name": "extramud",
+      "user_age": 22,
+      "user_status": "Hey, I’ll be back in five minutes. If I’m not, just read this message again.",
+      "user_hobby": "Photography, Graphic Design, Being with cats"
+    },
+    {
+    "profile_image": "images/up3.jpeg",
+    "user_name": "arrayus",
+    "user_age": "20+",
+    "user_status": "My job is secure. No one else wants it.",
+    "user_hobby": "binge watching on YTB & Netflix"
+  },
+    {
+      "profile_image": "images/up8.jpeg",
+      "user_name": "premiumeffort",
+      "user_age": 18,
+      "user_status": "I’m not special. I’m a limited edition.",
+      "user_hobby": "LOL and alternative music"
+    },
+    {
+      "profile_image": "images/up10.jpeg",
+      "user_name": "decemberexists",
+      "user_age": 20,
+      "user_status": "Someday you’ll go far, and I hope you stay there.",
+      "user_hobby": "books and boba"
+    },
+    {
+      "profile_image": "images/up9.jpeg",
+      "user_name": "singlebeer",
+      "user_age": 25,
+      "user_status": "You’re so lucky that I’m terrified of prison.",
+      "user_hobby": "coffee"
+    }
+
+  ];
+  createDetail(userDetailData[1]);
+
+  function createDetail (selectedJson){
+    let newDetail = document.createElement("DIV");
+    newDetail.classList.add("newUserDetail");
+
+    let userProfile = document.createElement("IMG");
+    userProfile.classList.add("newUserProfile");
+    userProfile.src = selectedJson['profile_image'];
+    newDetail.appendChild(userProfile);
+
+    let userInfo = document.createElement("DIV");
+    userInfo.classList.add("userInfo");
+    newDetail.appendChild(userInfo);
+
+    let userName = document.createElement("P");
+    userName.classList.add("userName");
+    userName.innerText = selectedJson['user_name'];
+    userInfo.appendChild(userName);
+
+    let userAge = document.createElement("P");
+    userAge.classList.add("userAge");
+    userAge.innerText = selectedJson['user_age'];
+    userInfo.appendChild(userAge);
+
+    let userStatus = document.createElement("P");
+    userStatus.classList.add("userStatus");
+    userStatus.innerText = selectedJson['user_status'];
+    userInfo.appendChild(userStatus);
+
+    let userHobby = document.createElement("P");
+    userHobby.classList.add("userHobby");
+    userHobby.innerText = selectedJson['user_hobby'];
+    userInfo.appendChild(userHobby);
+
+    let moreButton = document.createElement("BUTTON");
+    moreButton.classList.add("moreButton");
+    moreButton.innerHTML = "See More"
+    userInfo.appendChild(moreButton);
+    moreButton.addEventListener("click", function(){
+      if (window.confirm("Sorry, you'll need more connections to unlock more about this user. \nGo back to add more connections?")){
+        window.location.href = "page2_1.html"
+      }else{
+        window.location.href = "thank_you.html"
+
+      };
+
+    });
+    outputDetail.appendChild(newDetail);
+  }
+
+</script>
+
+  </body>
+</html>
